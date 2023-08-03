@@ -1,6 +1,6 @@
 {
   "name": "birecord",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bi-directional record in type-safe way",
   "main": "./dist/mod.js",
   "types": "./dist/mod.d.ts",
