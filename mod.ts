@@ -11,7 +11,7 @@ export class BiRecord<const T extends Record<any, any>> {
   ): U extends keyof T ? T[U] : U extends T[keyof T] ? Reverse<T>[U] : unknown {
     return this.original[key] ?? this.reversed[key as T[keyof T]];
   }
-  has<U extends keyof T | T[keyof T]>(key: U): boolean {
+  has(key: any): key is keyof T | T[keyof T] {
     return key in this.original || key in this.reversed;
   }
 }
