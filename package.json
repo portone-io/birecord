@@ -1,0 +1,37 @@
+{
+  "name": "birecord",
+  "version": "0.1.0",
+  "description": "Bi-directional record in type-safe way",
+  "main": "./dist/mod.js",
+  "types": "./dist/mod.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/mod.d.ts",
+      "require": "./dist/mod.js",
+      "import": "./dist/mod.mjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup ./mod.ts --dts --format esm,cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/portone-io/birecord.git"
+  },
+  "keywords": [
+    "birecord",
+    "bimap",
+    "bidirectional"
+  ],
+  "author": "JongChan Choi <rieul@portone.io>",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/portone-io/birecord/issues"
+  },
+  "homepage": "https://github.com/portone-io/birecord#readme",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  }
+}
