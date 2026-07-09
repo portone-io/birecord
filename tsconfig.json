@@ -2,5 +2,6 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "strict": true
-  }
+  },
+  "exclude": ["dist"]
 }
