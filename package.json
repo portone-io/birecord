@@ -16,7 +16,7 @@
     "LICENSE-*"
   ],
   "scripts": {
-    "build": "tsup ./mod.ts --dts --format esm,cjs",
+    "build": "tsdown ./mod.ts --dts --format esm,cjs --no-fixed-extension",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm build",
     "ci:publish": "pnpm publish -r && changeset tag"
@@ -38,8 +38,8 @@
   "homepage": "https://github.com/portone-io/birecord#readme",
   "devDependencies": {
     "@changesets/cli": "^2.31.0",
-    "tsup": "^7.2.0",
-    "typescript": "^5.1.6"
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3"
   },
   "packageManager": "pnpm@11.10.0+sha512.0b7f8b98060031904c017e3a41eb187a16d40eeb829b95c4f8cb03681761fc4ab53dd219115b9b447f4dce1a05a214764461e7d3703392a9f32f9511ce8c86c8"
 }
